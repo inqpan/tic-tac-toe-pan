@@ -1,5 +1,6 @@
 {
   "name": "tic-tac-toe-pan",
+  "homepage": "https://inqpan.github.io/tic-tac-toe-pan/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +9,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
