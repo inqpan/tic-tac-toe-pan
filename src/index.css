@@ -1,0 +1,25 @@
+/*Global page styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*Styles the whole webpage*/
+
+body {
+  margin: 0;
+
+  background-color: #eeeeee;
+
+  color: #222222;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/*Gives buttons the same font*/
+
+button {
+  font-family: Arial, sans-serif;
+}

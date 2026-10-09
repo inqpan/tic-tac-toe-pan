@@ -1,0 +1,204 @@
+/*Main page*/
+
+.page {
+  width: 90%;
+  max-width: 850px;
+
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: white;
+
+  border: 2px solid black;
+}
+
+
+/*Main title*/
+
+h1 {
+  text-align: center;
+}
+
+
+/*Text below the title*/
+
+.intro {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+/*Holds the board and move history*/
+
+.game {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 40px;
+}
+
+
+/*Board section */
+
+.board-section {
+  text-align: center;
+}
+
+
+/*Message above the board*/
+
+.status {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 15px;
+}
+
+
+/*Keeps squares in rows*/
+
+.board-row {
+  display: flex;
+}
+
+
+/*Normal square*/
+
+.square {
+  width: 90px;
+  height: 90px;
+
+  background-color: white;
+
+  border: 2px solid black;
+
+  font-size: 36px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/*Changes a square when hovering*/
+
+.square:hover {
+  background-color: lightgray;
+}
+
+
+/*Highlights winning squares*/
+
+.winning-square {
+  background-color: lightgreen;
+}
+
+
+/*Keeps winning squares highlighted*/
+
+.winning-square:hover {
+  background-color: lightgreen;
+}
+
+
+/*Move history box*/
+
+.game-info {
+  min-width: 260px;
+
+  padding: 15px;
+
+  border: 1px solid gray;
+
+  background-color: #f5f5f5;
+}
+
+
+/*Move history heading*/
+
+.game-info h2 {
+  margin-top: 0;
+}
+
+
+/*Space between moves*/
+
+.game-info li {
+  margin-bottom: 10px;
+}
+
+
+/*History buttons*/
+
+.history-button {
+  padding: 7px 10px;
+
+  cursor: pointer;
+}
+
+
+/*Sort button*/
+
+.sort-button {
+  padding: 8px 12px;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+
+/*Current move*/
+
+.current-move {
+  font-weight: bold;
+}
+
+
+/*Mobile layout*/
+
+@media screen and (max-width: 600px) {
+
+  /*Makes the page fit smaller screens*/
+
+  .page {
+    width: 95%;
+
+    margin: 15px auto;
+
+    padding: 15px;
+  }
+
+
+  /*Places history below the board*/
+
+  .game {
+    display: block;
+  }
+
+
+  /*Adds space below the board*/
+
+  .board-section {
+    margin-bottom: 25px;
+  }
+
+
+  /*Makes squares smaller*/
+
+  .square {
+    width: 75px;
+    height: 75px;
+  }
+
+
+  /*Makes history fit the screen*/
+
+  .game-info {
+    min-width: 0;
+
+    width: 100%;
+  }
+}
